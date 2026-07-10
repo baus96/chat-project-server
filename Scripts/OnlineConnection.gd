@@ -31,7 +31,7 @@ func send_register_data_to_server(Username, Password):
 		var file = FileAccess.open(save_path, FileAccess.READ)
 		var json_string = file.get_as_text()
 		file.close()
-		print("merhaba")
+		
 		
 		# JSON metnini Godot'nun anlayacağı sözlük yapısına çeviriyoruz
 		var json = JSON.new()
