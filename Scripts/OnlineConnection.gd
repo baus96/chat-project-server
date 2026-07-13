@@ -67,7 +67,8 @@ func return_login_result(success: bool, message: String):
 # --- YENİ KAYIT (REGISTER) ---
 @rpc("any_peer")
 func send_register_data_to_server(Username, Password):
-	if not multiplayer.is_server(): return
+	if not multiplayer.is_server(): 
+		return
 		
 	var registered_users = {} 
 	
